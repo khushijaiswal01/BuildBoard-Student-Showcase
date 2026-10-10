@@ -1,40 +1,97 @@
-# GDG AITR Portal — UI/UX Audit
+GDG AITR Portal — UI/UX Audit
 
-**Auditor:** [Your name]  
-**Date tested:** [Date]  
-**Device/browser:** [e.g. Windows laptop, Chrome version]  
-**Mobile test method/device:** [e.g. Chrome DevTools responsive mode / phone]
+Audit date: 10 October 2026
+Device: Windows laptop
+Browser: Chrome-based browser
 
-> Important: Do not claim an issue exists until you personally reproduce it. Fill this report with real observations from the recruitment portal.
+Scope
 
-## Scope
-- Desktop layout and navigation
-- Mobile/responsive layout
-- Recruitment flow and form usability
-- Links, buttons, feedback and accessibility
+Desktop homepage and navigation
 
-## Findings
+Announcements, Team, About, Gallery and Contact pages
 
-| ID | Page / element | Device | Reproduction steps | Actual result | Expected result | Severity | Suggested fix |
-|---|---|---|---|---|---|---|---|
-| F-01 | [Fill in] | Desktop/Mobile | [Steps] | [Observed] | [Expected] | Low/Medium/High | [Suggestion] |
-| F-02 | [Fill in] | Desktop/Mobile | [Steps] | [Observed] | [Expected] | Low/Medium/High | [Suggestion] |
+Visible page content and navigation menu
 
-## Checks
-- [ ] Navigation works on desktop
-- [ ] Navigation works on mobile
-- [ ] Text is readable at narrow widths
-- [ ] No horizontal overflow at mobile width
-- [ ] Buttons have visible focus/hover states
-- [ ] Form validation and error messages are understandable
-- [ ] Links go to the expected destination
-- [ ] Loading, success and error states are clear
-- [ ] Keyboard navigation is usable
-- [ ] Images have appropriate alternative text
+Findings
 
-## Overall suggestions
-1. [A specific improvement grounded in your observations]
-2. [A second specific improvement grounded in your observations]
+ID
 
-## Summary
-[Summarize the most important verified issues and improvements in 3–5 sentences.]
+Page / Element
+
+Observation
+
+Status
+
+1
+
+Home
+
+Main heading, Explore Events and Contact Us buttons, and community statistics were visible.
+
+Observed
+
+2
+
+Navigation
+
+Menu displayed Home, Announcements, Team, About, Gallery, Contact, Sign In and Sign Up.
+
+Observed
+
+3
+
+Announcements
+
+Page opened successfully and appeared correct during visual review.
+
+Passed visual check
+
+4
+
+Team
+
+Page opened successfully and appeared correct during visual review.
+
+Passed visual check
+
+5
+
+About
+
+Page opened successfully and appeared correct during visual review.
+
+Passed visual check
+
+6
+
+Gallery
+
+Page was visited during the review.
+
+Further verification needed
+
+7
+
+Contact
+
+Page opened successfully and appeared to work correctly.
+
+Passed initial check
+
+Suggested Improvements
+
+Test all navigation links and buttons individually.
+
+Verify Sign In and Sign Up functionality.
+
+Test mobile and tablet responsiveness.
+
+Check accessibility, keyboard navigation and form validation.
+
+Limitations
+
+This was a manual visual review. Not all links, forms, authentication flows or responsive layouts were tested. No unverified bugs are reported.
+
+Conclusion
+
+The reviewed pages opened successfully and the main navigation was visible. Further functional and responsive testing is recom

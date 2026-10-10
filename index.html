@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student project showcase and feedback board.">
+  <title>BuildBoard — Student Project Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">B</span> BuildBoard</a>
+    <nav><a href="#explore">Explore</a><a href="#submit">Submit a project</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">MADE BY STUDENTS · FOR STUDENTS</div>
+      <h1>Good ideas deserve<br><span>a place to shine.</span></h1>
+      <p>Discover student projects, share what you’re building, and help each other improve.</p>
+      <a class="primary-btn" href="#submit">＋ Share your project</a>
+      <div class="hero-stats"><div><strong id="projectCount">0</strong><span>projects</span></div><div><strong>Open</strong><span>community</span></div><div><strong>Build</strong><span>together</span></div></div>
+    </section>
+    <section id="submit" class="panel">
+      <div class="section-heading"><div><div class="eyebrow">CONTRIBUTE</div><h2>Share a project</h2></div><span class="small-note">Fields marked * are required</span></div>
+      <form id="projectForm">
+        <div class="form-grid">
+          <label>Project name *<input id="title" maxlength="70" required placeholder="e.g. Campus Connect"></label>
+          <label>Your name *<input id="author" maxlength="50" required placeholder="e.g. Khushi"></label>
+          <label>Category *<select id="category" required><option value="">Choose a category</option><option>Web Development</option><option>AI / Machine Learning</option><option>App Development</option><option>Data Science</option><option>Other</option></select></label>
+          <label>Project link (optional)<input id="url" type="url" placeholder="https://github.com/username/project"></label>
+        </div>
+        <label>What does it do? *<textarea id="description" maxlength="500" rows="3" required placeholder="Describe the problem and your solution in a few sentences."></textarea></label>
+        <label>Tags (comma separated)<input id="tags" maxlength="120" placeholder="HTML, JavaScript, beginner-friendly"></label>
+        <button class="primary-btn" type="submit">Publish project</button>
+        <p id="formMessage" class="message" role="status"></p>
+      </form>
+    </section>
+    <section id="explore" class="explore">
+      <div class="section-heading"><div><div class="eyebrow">COMMUNITY GALLERY</div><h2>Explore projects</h2></div><span id="resultCount" class="small-note"></span></div>
+      <div class="filters"><input id="search" type="search" placeholder="Search by name, description or tag…" aria-label="Search projects"><select id="filterCategory" aria-label="Filter by category"><option value="">All categories</option><option>Web Development</option><option>AI / Machine Learning</option><option>App Development</option><option>Data Science</option><option>Other</option></select><select id="sort"><option value="newest">Newest first</option><option value="popular">Most upvoted</option></select></div>
+      <div id="projectList" class="project-grid" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state" hidden>No projects match yet. Try another search or share the first one!</p>
+    </section>
+    <footer><span>BuildBoard · Student Project Showcase</span><span>Learn together. Build together.</span></footer>
+  </main>
+  <dialog id="commentDialog">
+    <form method="dialog" class="dialog-head"><h3 id="commentTitle">Project feedback</h3><button class="icon-btn" aria-label="Close">✕</button></form>
+    <div id="commentList" class="comment-list"></div>
+    <form id="commentForm"><label>Your name<input id="commentAuthor" maxlength="40" required placeholder="Name"></label><label>Comment<textarea id="commentText" maxlength="300" required rows="3" placeholder="Give constructive feedback…"></textarea></label><button class="primary-btn">Add comment</button></form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
